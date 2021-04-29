@@ -20,9 +20,9 @@ include the following elements into our portfolio:
 - [x] The current day is displayed at the top of the calender, when opened
 - [x] When I scroll down, time blocks are shown for standard business hours
 - [x] When I view the time blocks for that date, the colour is coded to indicate whether it is in the past, present or future.
-- [x] When I click onto a time bloc, i can enter an event
+- [x] When I click onto a time block, I can enter an event
 - [x] When I click the save button, the text for that event is saved in local storage
-- [x] When i refresh the page, the saved events persist
+- [x] When I refresh the page, the saved events persist
 
 ## Getting started
 
