@@ -33,7 +33,7 @@ include the following elements into our portfolio:
 
 ```
 git clone git@github.com:PDUBB3/work-day-schedule.git
-cd pamela_portfoliowork-day-schedule
+cd work-day-schedule
 code .
 ```
 
@@ -42,12 +42,10 @@ code .
 - Create assets, and images folder
 - Create `Style.css` file
 
-## Screenshots
-
 ### Screenshot of mock up
 
-![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/img/05-third-party-apis-homework-demo.gif)
+![A user clicks on slots on the color-coded calendar and edits the events.](./assets/img/05-third-party-apis-homework-demo.gif)
 
 ### Screenshot showing work day schedule created
 
-![image](./assets/images/responsive%20screenshot.png "Responsive Layout Screenshot")
+![image](./assets/img/work-day-schedule.JPG)
