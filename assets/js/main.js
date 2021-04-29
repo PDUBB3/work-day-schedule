@@ -1,4 +1,4 @@
-// getting current date from moment.js, formatting it and appending to <p> element
+// getting current date from moment.js and creating format for date
 const renderCurrentDate = () => {
   const dateTime = $("#currentDay");
   const displayNow = moment().format("dddd, MMMM Do");
@@ -15,27 +15,27 @@ const renderCalendarEvents = () => {
     // getting current hour using moment.js
     const currentHour = moment().hour();
 
-    // declaring and populating timeBlocksArray
-
+    // declaring and populating Array for time blocks
     const timeBlocks = $(".container").find(".row");
 
+    // creating function to set time classes
     const setTimeClasses = function () {
       const textArea = $(this).find("textarea");
       const timeBlockTime = Number.parseInt($(this).data("time"), 10);
-      // set new classes to display color blocks
+      // set classes to display color blocks for timeblocks
       if (timeBlockTime === currentHour) {
         textArea.removeClass("past").addClass("present");
       } else if (timeBlockTime > currentHour) {
         textArea.removeClass("past").addClass("future");
       }
-      //matching events with time blocks
+      //creating event to associated time block
       const plannedEvent = calendarEvents[timeBlockTime];
 
       textArea.text(plannedEvent);
     };
 
     timeBlocks.each(setTimeClasses);
-    // if there is no data in local storage
+    // if no data is present in local storage
   } else {
     localStorage.setItem("calendarEvents", JSON.stringify({}));
   }
